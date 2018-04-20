@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
@@ -11,12 +13,13 @@ $(document).ready(function() {
                     console.log("empty response");
                 }
                 else {
-                    console.log("not so empty lol");
                     $.ajax({
                         url         : 'index.php?link=loginCandidat',
                         type        : 'POST',
                         contentType : 'application/x-www-form-urlencoded',
                         data        : 'id='+ response.data[0].id_candidat +'&prenom='+ response.data[0].prenom_candidat +'&nom='+ response.data[0].nom_candidat + '&mail=' + response.data[0].mail_candidat
+                    }).done(function () {
+                        window.location.replace("index.php?link=offres")
                     });
                 }
             }

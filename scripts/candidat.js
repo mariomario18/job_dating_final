@@ -21,14 +21,16 @@ $(document).ready(function() {
         var result = JSON.parse(data);
         console.log(result.data[0].nom_candidat);
 
-        for (var i = 0, len = result.data.length; i < len; i++)
-        {
-            $('.candidat').append('<tr>');
-            $('.candidat').append('<td>'+ result.data[i].mail_candidat + '</td');
-            $('.candidat').append('<td>'+ result.data[i].prenom_candidat + '</td');
-            $('.candidat').append('<td>'+ result.data[i].nom_candidat + '</td');
-            $('.candidat').append('<td>'+ result.data[i].description_candidat + '</td');
-            $('.candidat').append('</tr>');
+        $('.candidat').append('<tr>');
+        $('.candidat').append('<td>'+ result.data[0].mail_candidat + '</td');
+        $('.candidat').append('<td>'+ result.data[0].prenom_candidat + '</td');
+        $('.candidat').append('<td>'+ result.data[0].nom_candidat + '</td');
+        $('.candidat').append('<td>'+ result.data[0].description_candidat + '</td');
+        $('.candidat').append('</tr>');
+
+        for (var i = 0, len = result.data.length; i < len; i++){
+            console.log(i);
+            $('.skill').append('<li>'+ result.data[i].nom_competence +' : '+ result.data[i].nom_niveau +'</li>');
         }
     });
 });
