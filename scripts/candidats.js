@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "http://localhost:3000/api/v1/candidates"
+        url: "http://169.254.196.39:3000/api/v1/candidates"
     }).then(function(data) {
         var result = JSON.parse(data);
         console.log(result.data[0].nom_candidat);

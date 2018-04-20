@@ -1,0 +1,46 @@
+#inscription {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+h1  {
+    font-weight: normal;
+    color: #003090;
+}
+
+#inputEmail, #inputPassword, #inputEntreprise {
+    height: 35px;
+    width: 278px;
+}
+
+#BTlogin, #BTsignup {
+    height: 35px;
+    width: 90px;
+    cursor: pointer;
+    border: none;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    background: #003090;
+    font: bold 13px Arial;
+    color: #fff;
+    border-color: #003090;
+}
+
+button {
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    border: none;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    background: #28a745;
+    font: bold 13px Arial;
+    color: #fff;
+    border-color: #28a745;
+}
+
+label {
+    width: 94px;
+}

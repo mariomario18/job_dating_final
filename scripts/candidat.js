@@ -16,7 +16,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 $(document).ready(function() {
     var id = getUrlParameter('id');
     $.ajax({
-        url: "http://localhost:3000/api/v1/candidates/" + id
+        url: "http://169.254.196.39:3000/api/v1/candidates/" + id
     }).then(function(data) {
         var result = JSON.parse(data);
         console.log(result.data[0].nom_candidat);

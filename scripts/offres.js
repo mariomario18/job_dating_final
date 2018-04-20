@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "http://localhost:3000/api/v1/posts"
+        url: "http://169.254.196.39:3000/api/v1/posts"
     }).then(function(data) {
         var result = JSON.parse(data);
         console.log(result.data[0].intitule_poste);

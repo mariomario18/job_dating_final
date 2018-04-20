@@ -1,8 +1,10 @@
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="theme/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="theme/css/loginCandidat.css">
+		<link rel="stylesheet" type="text/css" href="theme/css/signupCandidat.css">
 	</head>
 	
 	<body>
@@ -16,7 +18,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.php"><img src="theme/images/4364.png" alt="logo"/></a>
+						<a id:"navbarbrand" class="navbar-brand" href="index.php"><img src="theme/images/CDI.png" alt="logo"/></a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
