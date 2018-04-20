@@ -10,5 +10,9 @@
     <tbody class="candidat"></tbody>
 </table>
 
+<h2>Compétences</h2>
+<ul class="skill">
+</ul>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="scripts/candidat.js"></script>

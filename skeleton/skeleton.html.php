@@ -25,7 +25,12 @@
 							<?php
 								echo "<li><a href=\"index.php?link=candidats\">Liste des candidats</a></li>";
 								echo "<li><a href=\"index.php?link=offres\">Liste des offres</a></li>";
-								echo "<li><a href=\"index.php?link=loginCandidat\">Se connecter</a></li>";
+
+								if (!isset($_SESSION['id'])){
+									echo "<li><a href=\"index.php?link=loginCandidat\">Se connecter</a></li>";
+								} else {
+									echo "<li><a href=\"index.php?link=logout\">Se déconnecter</a></li>";
+								}
 						    ?>
 						</ul>
 					</div>

@@ -19,7 +19,9 @@
             $_SESSION['prenom'] = $_POST['prenom'];
             $_SESSION['nom'] = $_POST['nom'];
 
-            header('Location: index.php?link=offres');
+            echo($_SESSION['id']);
+            echo($_SESSION['prenom']);
+            echo($_SESSION['nom']);
         }
 
         ob_start();
@@ -27,14 +29,15 @@
         $container=ob_get_clean();
     }
 
-    elseif($link=="loginCandidatSuccess") {
-        $_SESSION['id'] = $_POST['id'];
-        $_SESSION['prenom'] = $_POST['prenom'];
-        $_SESSION['nom'] = $_POST['nom'];
-
+    elseif ($link=="logout")
+    {
         ob_start();
-        require_once(BASE_FILE."pages/loginCandidatSuccess.html.php");
-        $container=ob_get_clean();
+        $_SESSION['id'] = NULL;
+        $_SESSION['prenom'] = NULL;
+        $_SESSION['nom'] = NULL;
+        session_destroy();
+        require_once(BASE_FILE."pages/logout.html.php");
+        $container = ob_get_clean();
     }
 
 	elseif ($link=="signupCandidat") {
