@@ -37,6 +37,12 @@
         $container=ob_get_clean();
     }
 
+	elseif ($link=="signupCandidat") {
+        ob_start();
+        require_once(BASE_FILE."pages/signupCandidat.html.php");
+        $container=ob_get_clean();
+    }
+
     elseif ($link=="candidats") {
         ob_start();
         require_once(BASE_FILE."pages/candidats.html.php");

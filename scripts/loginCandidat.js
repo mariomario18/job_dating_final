@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
         $.ajax({
-            url     : 'http://localhost:3000/api/v1/candidates/login',
+            url: 'http://169.254.196.39:3000/api/v1/candidates/login',
             type    : 'POST',
             dataType: 'json',
             data    : {'mail_candidat': $('.mail_candidat').val(), 'mdp_candidat': $('.mdp_candidat').val()},
