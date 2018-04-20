@@ -1,0 +1,13 @@
+.container{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+td, th{
+	padding: 10px;
+}
+
+.navbar-header img{
+	width: 50px;
+	height: auto;
+}
